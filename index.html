@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coi - Portfolio</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Coi</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Tabitha.</h1>
+            <h3>I'm an Aspiring <span class="multiple-text"></span></h3>
+            <p>Web Developer in the making — currently mastering backend development. I build things for the web with a focus on clean code and forward-thinking design.</p>
+            
+            <div class="social-media">                
+                <a href="https://www.linkedin.com/in/tabitha-gichuki-3355a437b/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/coi-exe" aria-label="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <a href="Tabitha_Gichuki_CV.docx" class="btn" download="">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="me.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Building responsive websites using HTML, CSS, Bootstrap5, JavaScript and Django. I turn logic into functional web pages.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-paint'></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive interfaces. I focus on how the user feels when they navigate your site.</p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Branding</h3>
+                <p>Helping businesses establish their online presence and visual identity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4>HTML & CSS</h4>
+                    <p>80%</p>
+                </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4>Python(Django)</h4>
+                    <p>65%</p>
+                </div>
+                <div class="skill-bar"><span style="width: 65%"></span></div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4>JavaScript</h4>
+                    <p>40%</p>
+                </div>
+                <div class="skill-bar"><span style="width: 40%"></span></div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h4>C Programming</h4>
+                    <p>50%</p>
+                </div>
+                <div class="skill-bar"><span style="width: 50%"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class='bx bx-list-check'></i>
+                </div>
+                <div class="project-content">
+                    <h3>To-Do App</h3>
+                    <p>A task management application built with Django. Features include task creation, completion tracking, and priority levels.</p>
+                    <div class="project-tech">
+                        <span>Django</span>
+                        <span>Bootstrap5</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/coi-exe/task-manager" target="_blank" class="btn-small"><i class='bx bxl-github'></i> Code</a>
+                        <a href="https://task-manager-wqh8.onrender.com/" target="_blank" class="btn-small"><i class='bx bx-link-external'></i> Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class='bx bx-store'></i>
+                </div>
+                <div class="project-content">
+                    <h3>Ecommerce Feeds Store</h3>
+                    <p>Full-stack ecommerce platform for animal feeds. Integrated M-pesa API for payments and features product catalog, cart, and order management.</p>
+                    <div class="project-tech">
+                        <span>Django</span>
+                        <span>M-pesa API</span>
+                        <span>Bootstrap5</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/coi-exe/santamore-feeds" class="btn-small"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class='bx bx-palette'></i>
+                </div>
+                <div class="project-content">
+                    <h3>Frontend Designs</h3>
+                    <p>Collection of responsive frontend designs and UI components. Showcasing modern design patterns and clean code practices.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Tailwind/Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/coi-exe" class="btn-small"><i class='bx bxl-github'></i> View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="timeline-items">
+             <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025-Present</div>
+                <div class="timeline-content">
+                    <h3>Nyeri National Polytechnic</h3>
+                    <p>Diploma In Software Development</p>
+                </div>
+            </div>
+             <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>eMobilis Tech Institute</h3>
+                    <p>Web Development Bootcamp. Focusing on full-stack development with Python, Django and M-pesa API(Daraja).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>AGCCI Alumna</h3>
+                    <p>African Girls Can Code Initiative. Where the coding journey sparked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Connect with <span>Me!</span></h2>
+
+        <form action="#" id="contact-form">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2025 by Coi | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
