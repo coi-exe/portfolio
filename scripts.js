@@ -40,7 +40,7 @@ window.onscroll = () => {
 
 // Typed.js initialization
 const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'Backend Developer', 'Data Analyst'],
+    strings: ['Backend Developer', 'Data Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
