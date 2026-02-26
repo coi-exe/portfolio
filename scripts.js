@@ -205,3 +205,30 @@ window.addEventListener('scroll', () => {
     const scrolled = (window.scrollY / windowHeight) * 100;
     progressBar.style.width = scrolled + '%';
 });
+//Map Initialization
+document.addEventListener('DOMContentLoaded', () => {
+    // Standard coordinates for Nyeri
+    const lat = -0.4215;
+    const lng = 36.9519;
+
+    const map = L.map('map').setView([lat, lng], 12);
+
+    // Loading standard OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Blue Pin
+    const defaultIcon = L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41]
+    });
+
+    L.marker([lat, lng], { icon: defaultIcon }).addTo(map)        
+        .openPopup();
+});
+
+// Run the map function
+document.addEventListener('DOMContentLoaded', initMap);
