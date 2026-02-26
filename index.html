@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coi - Portfolio</title>
-    
+    <title>Coi - Portfolio</title>    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    //Map initialisation
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
 
@@ -205,15 +206,11 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Connect with <span>Me!</span></h2>
-
-        <form action="https://formsubmit.co/gichukicoii@gmail.com" method="POST" id="contact-form">
-            <!-- FormSubmit Configuration -->
+    <h2 class="heading">Connect with <span>Me!</span></h2>
+    
+    <div class="contact-wrapper">
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST" id="contact-form">
             <input type="hidden" name="_subject" value="New Contact from Portfolio!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://gichuki.netlify.app">
-            
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
@@ -224,12 +221,17 @@
             </div>
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+        </form> 
+        
+        <div id="map-snippet">
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
 
     <footer class="footer">
         <div class="footer-text">
-            <p>&copy; 2025 by Coi | All Rights Reserved.</p>
+            <p>&copy; 2026 by Coi | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
@@ -240,6 +242,7 @@
 </body>
 
 </html>
+
 
 
 
