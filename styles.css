@@ -180,18 +180,19 @@ span {
 }
 
 .home-img {
-    opacity: 0;
-    animation: slideInRight 1s ease forwards 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-img img {
-    width: 30vw;
-    aspect-ratio: 1 / 1; /* Forces the container to be a perfect square */
-    object-fit: cover; /* Forces the photo to fill the square without distorting */
-    object-position: top; /* Ensures my face stays in frame */
-    animation: floatImage 4s ease-in-out infinite;
-    border-radius: 50%; 
+    width: 450px; /* Forcing an exact desktop size */
+    height: 450px; /* Forcing the height to perfectly match */
+    object-fit: cover !important; /* The important tag overrides any hidden conflicting rules */
+    object-position: center !important; 
+    border-radius: 50%;
     border: 2px solid var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 @keyframes floatImage {
@@ -651,9 +652,10 @@ span {
         flex-direction: column;
         gap: 3rem;
     }
-    .home-img img { 
-        width: 70vw; 
-        margin-top: 4rem; 
+    
+    .home-img img {
+    width: 70vw;
+    height: 70vw; /* Keeps it a perfect square on mobile */
     }
     
     .contact form .input-box input { width: 100%; }
@@ -676,5 +678,7 @@ span {
     .education .timeline-dot {
         left: 0;
     }
+
+    
 
 }
